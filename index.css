@@ -29,6 +29,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .card {
@@ -67,6 +69,14 @@ body {
   background: url("./images/muggu.png");
   background-size: contain;
   background-position: center;
+}
+.muggu_img_down {
+  width: 100%;
+  height: 60px;
+  background: url("./images/muggu.png");
+  background-size: contain;
+  background-position: center;
+  transform: rotate(180deg);
 }
 .footer {
   width: 100%;
