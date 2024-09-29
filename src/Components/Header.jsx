@@ -6,7 +6,7 @@ const Header = () => {
       <img
         width="100px"
         height="100px"
-        src="./images/logo1-removebg-preview.png"
+        src="https://i.ibb.co/L8TfvYy/logo1-removebg-preview.png"
       />
       <h1>Triveni Foods</h1>
     </div>
