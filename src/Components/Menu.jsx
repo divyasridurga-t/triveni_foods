@@ -1,6 +1,12 @@
 import data from "../Utils/recepies.json";
 
 const Menu = () => {
+
+  function handleClick(title){
+    console.log(title);
+    
+  }
+
   return (
     <>
       <div className="body_container">
@@ -16,6 +22,10 @@ const Menu = () => {
                 <div className="recipe_des">
                   <div className="recipe_name">
                     {item.title} / {item.telugu_title}
+                  </div>
+                  <div>
+                    <p className="price">price</p>
+                    <button onClick={()=>handleClick(item.title)} className="order_now_btn">Order Now</button>
                   </div>
                 </div>
               </div>
