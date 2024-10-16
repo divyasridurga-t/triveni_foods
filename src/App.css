@@ -129,6 +129,14 @@ a {
   height: 95%;
   width: 40%;
 }
+
+.recipe_img {
+  width: 18rem;
+  height: 18rem;
+  margin-left: 3rem;
+  margin-bottom: 6rem;
+  border-radius: 15px;
+}
 .form_ .type_text {
   width: 90%;
   height: 40px;
@@ -150,7 +158,7 @@ select {
   font-size: 16px;
   margin-bottom: 10px;
 }
-.place_order{
+.place_order {
   width: 90%;
   height: 40px;
   border: none;
@@ -174,5 +182,63 @@ select {
   .detail_box {
     top: 2%;
     margin-left: 15px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 642px) {
+  .detail_box {
+    display: flex;
+    flex-direction: column;
+  }
+  .detail_img {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+  }
+  .recipe_img {
+    width: 15rem;
+    height: 12rem;
+    margin-right: 50px;
+    margin-top: 90px;
+  }
+  .form_ {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .form_ .type_text {
+    width: 100%;
+    padding: 0%;
+  }
+  select {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .detail_button {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .detail_box {
+    display: flex;
+    flex-direction: row;
+  }
+  .form_ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: 50%;
+    height: 60%;
+    margin-left: 70px;
+  }
+  select {
+    margin-bottom: 20px;
   }
 }

@@ -22,7 +22,7 @@ const RecipeDetailPage = () => {
     let url = `https://wa.me/${phoneNumber}?text=${encoded_msg}`;
 
     // Redirect to the WhatsApp URL
-    window.open(url, '_blank'); // Use '_blank' to open in a new tab
+    window.open(url, "_blank"); // Use '_blank' to open in a new tab
   }
 
   return (
@@ -33,8 +33,7 @@ const RecipeDetailPage = () => {
           <div className="detail_box">
             <div className="detail_img">
               <img
-                width={250}
-                height={350}
+                className="recipe_img"
                 src="https://www.godavarivantillu.com/cdn/shop/products/bellam-jeedilu-149_305x.jpg?v=1638886880"
               />
             </div>
@@ -61,7 +60,7 @@ const RecipeDetailPage = () => {
                   type="text"
                 />
               </div>
-              <div>
+              <div className="detail_button">
                 <button onClick={placeOrder} className="place_order">
                   Place Order
                 </button>
