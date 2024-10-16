@@ -95,6 +95,14 @@ body {
   right: 0;
   z-index: 99;
   background-repeat: no-repeat;
+  /* background-size: cover;
+  background-position: center; */
+
+  /* https://i.ibb.co/h9cSYSY/Banana-Tree-Clipart-PNG-removebg-preview.png */
+  /* https://i.ibb.co/zHws2Lk/2932562-middle-removebg-preview.png */
+  /* https://i.ibb.co/1MYcBRT/pngtree-banana-tree-logo-png-image-4475551-removebg-preview.png */
+  /* https://i.ibb.co/2WvcfkR/banana-tree.png */
+  /* https://i.ibb.co/44bhFBp/84e972e714643206e7f88a30c24b77b5-removebg-preview.png */
 }
 .detail_box {
   width: 70%;

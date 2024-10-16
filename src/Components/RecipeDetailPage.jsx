@@ -5,24 +5,29 @@ import { useParams } from "react-router-dom";
 const RecipeDetailPage = () => {
   let { recipe = "", id = "" } = useParams();
   let [more, setMore] = useState(false);
+  let [data, setData] = useState({
+    recipe_name: recipe,
+    quantity: "",
+    customizations: "",
+  });
 
   function handleChange(e) {
-    console.log();
     if (e.target.value === "more") {
       setMore(true);
     }
+    setData({
+      ...data,
+      [e.target.name]: e.target.value,
+    });
   }
+  console.log(data);
 
   function placeOrder() {
-    let message = "hello lokeshhh !!"; // Your message
-    let encoded_msg = encodeURIComponent(message); // Encode the message
-    let phoneNumber = "918985755632"; // Phone number in international format without symbols
-
-    // Construct the WhatsApp URL
+    let message = `Product : ${data.recipe_name.toUpperCase().replaceAll('-',' ')}\nQuantity : ${data.quantity} Kg\nCustomizations : ${data.customizations}`;
+    let encoded_msg = encodeURIComponent(message);
+    let phoneNumber = "918985755632";
     let url = `https://wa.me/${phoneNumber}?text=${encoded_msg}`;
-
-    // Redirect to the WhatsApp URL
-    window.open(url, "_blank"); // Use '_blank' to open in a new tab
+    window.open(url, "_blank");
   }
 
   return (
@@ -40,24 +45,34 @@ const RecipeDetailPage = () => {
             <div className="form_">
               <input className="type_text" value={recipe} type="text" />
               <div>
-                <select onChange={handleChange} name="" id="">
+                <select onChange={handleChange} name={"quantity"} id="">
                   <option>Choose quantity</option>
-                  <option>1/4 kg</option>
-                  <option>1/2 kg</option>
-                  <option>1 kg</option>
-                  <option>2 kg</option>
-                  <option>3 kg</option>
+                  <option value={"quater"}>1/4 kg</option>
+                  <option value={"half"}>1/2 kg</option>
+                  <option value={"1"}>1 kg</option>
+                  <option value={"2"}>2 kg</option>
+                  <option value={"3"}>3 kg</option>
                   <option value={"more"}>more...</option>
                 </select>
                 {more && (
-                  <input className="type_text" type="number" min="4" step="1" />
+                  <input
+                    onChange={handleChange}
+                    className="type_text"
+                    type="number"
+                    min="4"
+                    step="1"
+                    name="quantity"
+                    placeholder="enter the quantity"
+                  />
                 )}
               </div>
               <div>
                 <input
+                  onChange={handleChange}
                   placeholder="customizations if any"
                   className="type_text"
                   type="text"
+                  name="customizations"
                 />
               </div>
               <div className="detail_button">
