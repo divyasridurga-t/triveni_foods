@@ -242,3 +242,36 @@ select {
     margin-bottom: 20px;
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .detail_box {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 45%;
+  }
+  .detail_img {
+    margin: 1rem 1rem;
+    width: 70%;
+    height: 35%;
+    padding-top: 55px;
+  }
+  .recipe_img {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .form_ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    width: 60%;
+    height: 20%;
+    margin-left: 70px;
+  }
+
+  select {
+    height: 60%;
+  }
+}
