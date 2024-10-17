@@ -38,9 +38,8 @@ const RecipeDetailPage = () => {
 
   function handleAddCartClick(data) {
     dispatch(addItem(data));
-  }
 
-  // let cartData = useSelector((store)=> console.log(store.cart.item));
+  }
   
 
   return (
