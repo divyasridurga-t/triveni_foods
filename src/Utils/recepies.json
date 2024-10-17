@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "chakraalu",
-    "image": "images/chakralu.png",
+    "image": "images/chekaralu.png",
     "telugu_title": "చక్రాలు",
     "price_starting_from": "",
     "half_kg_price": "",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "title": "bellam nuvvula Laddu",
-    "image": "images/bellam_nuvvu_laddu.png",
+    "image": "images/Nuvulaladdu.png",
     "telugu_title": "బెల్లం నువ్వుల లడ్డు",
     "price_starting_from": "",
     "half_kg_price": "",
@@ -55,18 +55,9 @@
   },
   {
     "id": 7,
-    "title": "gavvalu",
-    "image": "images/sugar_gavvalu.png",
+    "title": "Bellam gavvalu",
+    "image": "images/Bellam_Gavvalu.png",
     "telugu_title": "గవ్వలు",
-    "price_starting_from": "",
-    "half_kg_price": "",
-    "kg_price": ""
-  },
-  {
-    "id": 8,
-    "title": "chitti khaja",
-    "image": "images/chitti_khaja.png",
-    "telugu_title": "చిట్టి ఖాజా",
     "price_starting_from": "",
     "half_kg_price": "",
     "kg_price": ""
@@ -83,7 +74,7 @@
   {
     "id": 10,
     "title": "Theepi Kommulu",
-    "image": "images/chitti_khaja.png",
+    "image": "images/tepikumulu.png",
     "telugu_title": "తీపి కొమ్ములు",
     "price_starting_from": "",
     "half_kg_price": "",
