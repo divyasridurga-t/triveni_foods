@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RecipeDetailPage from "./Components/RecipeDetailPage";
 import { Provider } from "react-redux";
 import shopStore from "./redux/shopStore";
+import CartPage from "./Components/cartPage";
 
 function App() {
   let routes = createBrowserRouter([
@@ -17,6 +18,10 @@ function App() {
       element: <RecipeDetailPage />,
       errorElement: "",
     },
+    {
+      path:'/cart',
+      element:<CartPage/>
+    }
   ]);
   return (
     <>
