@@ -1,8 +1,11 @@
 import { useState } from "react";
 import Layout from "./Layout";
 import { useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { addItem } from "../redux/cartSlice";
 
 const RecipeDetailPage = () => {
+  let dispatch = useDispatch();
   let { recipe = "", id = "" } = useParams();
   let [more, setMore] = useState(false);
   let [data, setData] = useState({
@@ -20,15 +23,25 @@ const RecipeDetailPage = () => {
       [e.target.name]: e.target.value,
     });
   }
-  console.log(data);
 
   function placeOrder() {
-    let message = `Product : ${data.recipe_name.toUpperCase().replaceAll('-',' ')}\nQuantity : ${data.quantity} Kg\nCustomizations : ${data.customizations}`;
+    let message = `Product : ${data.recipe_name
+      .toUpperCase()
+      .replaceAll("-", " ")}\nQuantity : ${
+      data.quantity
+    } Kg\nCustomizations : ${data.customizations}`;
     let encoded_msg = encodeURIComponent(message);
     let phoneNumber = "918985755632";
     let url = `https://wa.me/${phoneNumber}?text=${encoded_msg}`;
     window.open(url, "_blank");
   }
+
+  function handleAddCartClick(data) {
+    dispatch(addItem(data));
+  }
+
+  // let cartData = useSelector((store)=> console.log(store.cart.item));
+  
 
   return (
     <>
@@ -76,6 +89,12 @@ const RecipeDetailPage = () => {
                 />
               </div>
               <div className="detail_button">
+                <button
+                  onClick={() => handleAddCartClick(data)}
+                  className="add_to_cart"
+                >
+                  Add to cart
+                </button>
                 <button onClick={placeOrder} className="place_order">
                   Place Order
                 </button>
