@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "chakraalu",
+    "title": "Chakraalu",
     "image": "images/chekaralu.png",
     "telugu_title": "చక్రాలు",
     "price_starting_from": "",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "title": "ribbon pakodi",
+    "title": "Ribbon Pakodi",
     "image": "images/ribbon_pakodi.png",
     "telugu_title": "రిబ్బన్ పకోడీ",
     "price_starting_from": "",
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "title": "sunnundalu",
+    "title": "Sunnundalu",
     "image": "images/sunnundalu.png",
     "telugu_title": "సున్నుండలు",
     "price_starting_from": "",
@@ -82,7 +82,7 @@
   },
   {
     "id": 11,
-    "title": "boondhi laddo",
+    "title": "Boondhi Laddo",
     "image": "images/laddu.png",
     "telugu_title": "బూందీ లడ్డు",
     "price_starting_from": "",
@@ -103,6 +103,42 @@
     "title": "Panasa Thonalu",
     "image": "images/panasa_tonalu.png",
     "telugu_title": "పనస తోనాలు",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 14,
+    "title": "Avakai Pickle",
+    "image": "images/Avakaya.png",
+    "telugu_title": "ఆవకాయ",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 15,
+    "title": "Tomato Pickle",
+    "image": "images/tomatopickle.png",
+    "telugu_title": "టమోటా పచ్చడి",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 15,
+    "title": "Usirikaya Pickle",
+    "image": "images/usirikaya_pickle.png",
+    "telugu_title": "ఉసిరికాయ పచ్చడి",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 15,
+    "title": "Gongura Pickle",
+    "image": "images/gongurapickle.png",
+    "telugu_title": "గోంగూర పచ్చడి ",
     "price_starting_from": "",
     "half_kg_price": "",
     "kg_price": ""

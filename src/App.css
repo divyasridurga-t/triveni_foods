@@ -148,7 +148,7 @@ a {
 .form_ .type_text {
   width: 90%;
   height: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   border: none;
   border-radius: 8px;
   font-size: 16px;
@@ -198,7 +198,7 @@ select {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: #FF0000;
+  background-color: #ff0000;
   position: absolute;
   top: -12%;
   right: 27%;
@@ -208,7 +208,7 @@ select {
   color: white;
   font-weight: bold;
 }
-.cart_page{
+.cart_page {
   width: 50%;
   height: 300px;
   background-color: #c2d28b;
@@ -216,14 +216,18 @@ select {
   margin-bottom: 20px;
 }
 
-.cart_card{
+.cart_card {
   width: 60%;
   height: 100px;
   background: #283618;
   margin: auto;
-
 }
 
+.recipe_quantity_validation {
+  color: red;
+}
+
+/* media query //////////////////////////////////////////////// */
 @media only screen and (max-width: 768px) {
   .body_container {
     display: flex;

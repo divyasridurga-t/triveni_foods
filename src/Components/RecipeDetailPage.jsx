@@ -13,6 +13,7 @@ const RecipeDetailPage = () => {
     quantity: "",
     customizations: "",
   });
+  const [validation, setValidation] = useState(false);
 
   function handleChange(e) {
     if (e.target.value === "more") {
@@ -37,11 +38,12 @@ const RecipeDetailPage = () => {
   }
 
   function handleAddCartClick(data) {
+    console.log(data.quantity);
     dispatch(addItem(data));
+    !data.quantity ? setValidation(true) : setValidation(false);
   }
 
   // let cartData = useSelector((store)=> console.log(store.cart.item));
-  
 
   return (
     <>
@@ -58,7 +60,7 @@ const RecipeDetailPage = () => {
             <div className="form_">
               <input className="type_text" value={recipe} type="text" />
               <div>
-                <select onChange={handleChange} name={"quantity"} id="">
+                <select onChange={handleChange} name={"quantity"} required>
                   <option>Choose quantity</option>
                   <option value={"quater"}>1/4 kg</option>
                   <option value={"half"}>1/2 kg</option>
@@ -67,6 +69,11 @@ const RecipeDetailPage = () => {
                   <option value={"3"}>3 kg</option>
                   <option value={"more"}>more...</option>
                 </select>
+                {validation && (
+                  <p className="recipe_quantity_validation">
+                    please select quantity
+                  </p>
+                )}
                 {more && (
                   <input
                     onChange={handleChange}
