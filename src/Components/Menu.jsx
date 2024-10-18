@@ -3,7 +3,7 @@ import data from "../Utils/recepies.json";
 const Menu = () => {
 
   function handleClick(title){
-    console.log(title);
+    // console.log(title);
     
   }
 

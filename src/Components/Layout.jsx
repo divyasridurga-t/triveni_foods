@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Layout = ({ children }) => {
   let cartData = useSelector((store) => store.cart.item);
-  console.log(cartData);
+  // console.log(cartData);
 
   return (
     <>
