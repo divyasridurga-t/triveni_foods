@@ -35,12 +35,13 @@ body {
 
 .card {
   width: 270px;
-  height: 380px;
+  height:auto;
   background-color: #c2d28b;
   border-radius: 10px;
   margin-right: 20px;
   margin-bottom: 20px;
   cursor: pointer;
+  padding: 10px 5px;
 }
 .img_container {
   display: flex;
@@ -126,6 +127,7 @@ a {
   border-radius: 8px;
   font-weight: bold;
   width: 100%;
+  margin-top: 10px;
 }
 .price {
   text-align: center;
@@ -268,7 +270,7 @@ select {
   cursor: pointer;
 }
 .delete_btn{
-  width: 70%;
+  width:auto;
   height: 40px;
   border: none;
   border-radius: 8px;

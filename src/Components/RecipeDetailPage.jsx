@@ -34,6 +34,8 @@ const RecipeDetailPage = () => {
     let encoded_msg = encodeURIComponent(message);
     let phoneNumber = "918985755632";
     let url = `https://wa.me/${phoneNumber}?text=${encoded_msg}`;
+    console.log(url);
+    
     window.open(url, "_blank");
   }
 

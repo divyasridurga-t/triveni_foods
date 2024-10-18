@@ -24,7 +24,7 @@ const Menu = () => {
                     {item.title} / {item.telugu_title}
                   </div>
                   <div>
-                    <p className="price">price</p>
+                    {/* <p className="price">price</p> */}
                     <button onClick={()=>handleClick(item.title)} className="order_now_btn">Order Now</button>
                   </div>
                 </div>
