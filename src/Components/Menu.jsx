@@ -12,7 +12,7 @@ const Menu = () => {
       <div className="body_container">
         {data.map((item, index) => {
           let recipe_name = item?.title?.toLowerCase()?.split(" ")?.join("-");
-          let url = `/${recipe_name}/${item.id}`;
+          let url = `/triveni_foods/${recipe_name}/${item.id}`;
           return (
             <a href={url}>
               <div className="card" key={index}>

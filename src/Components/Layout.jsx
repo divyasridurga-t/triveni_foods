@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
         <Caption />
         {children}
         <div className="cart_btn">
-          <Link to={'/cart'}>
+          <Link to={'/triveni_foods/cart'}>
             <div className="number_badge">{cartData.length}</div>
             <div>
               <img
