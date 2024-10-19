@@ -9,17 +9,17 @@ import CartPage from "./Components/cartPage";
 function App() {
   let routes = createBrowserRouter([
     {
-      path: "/triveni_foods",
+      path: "/",
       element: <Home />,
       errorElement: "",
     },
     {
-      path: "/triveni_foods/:recipe/:id",
+      path: "/:recipe/:id",
       element: <RecipeDetailPage />,
       errorElement: "",
     },
     {
-      path:'/triveni_foods/cart',
+      path:'/cart',
       element:<CartPage/>
     }
   ]);
